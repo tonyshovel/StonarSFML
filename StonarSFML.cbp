@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="StonarSFML" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Option virtualFolders="enemy\;player\;menu\;" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/StonarSFML" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add library="sfml-graphics" />
+					<Add library="sfml-window" />
+					<Add library="sfml-system" />
+					<Add library="sfml-audio" />
+					<Add library="sfml-network" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/StonarSFML" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="sfml-graphics" />
+					<Add library="sfml-window" />
+					<Add library="sfml-system" />
+					<Add library="sfml-audio" />
+					<Add library="sfml-network" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="SFML-2.5.1/include" />
+		</Compiler>
+		<Linker>
+			<Add directory="SFML-2.5.1/lib" />
+		</Linker>
+		<Unit filename="main.cpp" />
+		<Unit filename="note.txt">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="sources/Menu.cpp">
+			<Option virtualFolder="menu/" />
+		</Unit>
+		<Unit filename="sources/Menu.h">
+			<Option virtualFolder="menu/" />
+		</Unit>
+		<Unit filename="sources/bullet.h" />
+		<Unit filename="sources/enemy.cpp">
+			<Option virtualFolder="enemy/" />
+		</Unit>
+		<Unit filename="sources/enemy.h">
+			<Option virtualFolder="enemy/" />
+		</Unit>
+		<Unit filename="sources/gameengine.cpp" />
+		<Unit filename="sources/global.cpp" />
+		<Unit filename="sources/player.cpp">
+			<Option virtualFolder="player/" />
+		</Unit>
+		<Unit filename="sources/player.h">
+			<Option virtualFolder="player/" />
+		</Unit>
+		<Unit filename="sources/stonar.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
